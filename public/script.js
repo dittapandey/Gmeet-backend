@@ -26,7 +26,7 @@ const user = prompt("Enter your name");
 var peer = new Peer(undefined, {
     path: "peerjs",
     host: "/",
-    port: "443"
+    port: process.env.PORT || "3030"
 });
 
 let myVideoStream;
